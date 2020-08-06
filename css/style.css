@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -11,13 +12,17 @@ body {
     justify-content: center;
     text-align: center;
     font-size: 16px;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0 auto;
     padding: 0;
     background-color: #D6D9DD;
     width: 100%;
     height: auto;
     line-height: 1.5;
+}
+main {
+    flex: 1 0 auto;
+    margin: 0 5px;
 }
 .card {
     display: flex;
@@ -69,6 +74,7 @@ p {
     text-decoration: none;
     cursor: pointer;
     text-align: right;
+    font-size: small;
 }
 .footer a:hover {
     font-weight: bold;
@@ -81,6 +87,8 @@ p {
     align-items: center;
     justify-content: center;
     text-align: justify;
+    margin: 0;
+    padding: 0;
 }
 .breed,.age,.size {
     margin: 2.5rem;
@@ -92,4 +100,25 @@ p {
 .description {
     text-align: justify;
     padding: 0 2.5rem;
+    margin: 0;
+}
+@media only screen and (max-width:400px){
+    .card {
+        width: 90%;
+        margin: 5px auto;
+        height: 100vh;
+    }
+    .breed,.age,.size {
+        margin: 1.5rem;
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 960){
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
 }
