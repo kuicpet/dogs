@@ -68,6 +68,8 @@ p {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    width: 100%;
+  
 }
  .footer a {
     color: blue;
@@ -78,6 +80,9 @@ p {
 }
 .footer a:hover {
     font-weight: bold;
+    padding: 1% 5%;
+    border-radius: 10px;
+    background-color: #DFF0EA;
 }
 .description p {
     color: #000000;
@@ -106,10 +111,9 @@ p {
     .card {
         width: 90%;
         margin: 5px auto;
-        height: 100vh;
     }
     .breed,.age,.size {
-        margin: 1.5rem;
+        margin: 1rem;
     }
 }
 @media only screen and (min-width: 401px) and (max-width: 960){
